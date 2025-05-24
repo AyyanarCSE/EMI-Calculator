@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+    <div class="flex justify-between   lg:px-20 fixed top-0 left-0 right-0 z-10 px-10 bg-white ">
+    <div class="flex items-center justify-center ">
+        <span class="lg:hidden text-gray-500 mr-3  "><i class="fa-solid fa-bars "></i></span>
+        <img src="/images/sbi-logo.png" alt="" class="lg:w-20 lg:h-20 w-15 h-15 object-cover ">
+
+        <p class="text-sky-400 lg:text-lg lg:font-medium lg:w-full w-20 text-xs lg:text-start text-center ">Educational Loan</p>
+    </div>
+    
+    <div class="flex items-center justify-center space-x-5 ">
+        <ul class=" space-x-5 text-gray-600 hidden lg:block">
+            
+            <a href="#" class="hover:text-sky-400">About Us</a>
+            <a href="#" class="hover:text-sky-400">Our Products</a>
+            <a href="#" class="hover:text-sky-400">Approved Projects</a>
+            <a href="#" class="hover:text-sky-400">Calculators</a>
+            <a href="#" class="hover:text-sky-400">FAQs</a>
+            <a href="#" class="hover:text-sky-400">Contact Us</a>
+            
+            
+        </ul>
+        
+        <button class="text-white font-medium rounded bg-sky-400 lg:px-4 lg:py-2 px-2 py-1 lg:hover:cursor-pointer hover:bg-gray-100 hover:text-sky-400">Log In</button>
+    
+    </div>
+    </div>
+
+    <div class="pt-10 lg:pt-0">
+        <img src="/images/loan-designs.png" alt="" class="lg:h-full lg:w-screen w-full h-full object-cover">
+
+    </div>
+
+    <div class="lg:mx-20 mx-5 my-10 lg:my-10  ">
+        <h1 class="lg:font-bold font-medium text-3xl text-center lg:text-start lg:text-5xl text-blue-950">SBI Educational Loan EMI Calculator</h1>
+        <div class="flex lg:flex lg:flex-row flex-col-reverse">
+        <div class="lg:mx-10 px-5 py-10 lg:my-10 lg:space-y-5 space-y-2 w-full lg:w-1/2">
+
+        <p class="lg:text-xl text-lg text-blue-950 ">Select loan amount <br>
+            <input type="number" placeholder="" id="amount" class="border-2 border-gray-300 focus:outline-none rounded-sm px-5 w-full lg:h-10 h-full ">
+        </p>
+
+        <p class="lg:text-xl text-lg text-blue-950">Number of months <br>
+            <input type="number" id="months" class="border-2 border-gray-300 rounded-sm focus:outline-none px-5 w-full lg:h-10 h-full">
+        </p>
+
+        <p class="lg:text-xl text-lg text-blue-950">Interest rate  <br>
+            <input type="number" id="interest" class="border-2  border-gray-300 rounded-sm focus:outline-none w-full lg:h-10 h-full px-5">
+        </p>
+        <button id="button" onclick="update(); change();" class="lg:text-2xl text-lg lg:hover:cursor-pointer font-medium mt-2 lg:font-semibold text-white bg-green-400 py-1 lg:py-2  w-full rounded-md">Convert</button>
+
+        <h1 class="lg:text-2xl text-lg text-red-500   font-medium " id="result">
+        </h1>
+        </div>
+        <div class="flex lg:w-1/2  items-center justify-center">
+            <img src="/images/loan-design.jpg" alt="" class="lg:w-full w-full object-center h-80 lg:h-full bg-transparent ">
+        </div>
+        </div>
+    </div>
+<div class="flex lg:items-center  items-center justify-center flex-col lg:flex lg:flex-row lg:justify-between lg:px-20 space-y-5 bg-sky-100 px-5 py-10 lg:py-15">
+    <div class="space-y-7 text-center lg:text-start">
+        <p class="text-sky-400 font-medium lg:text-4xl text-3xl lg:w-200 ">Your Investment Portfolio is complex, Filing shouldn’t be.</p>
+        <p class="lg:text-lg lg:font-medium  lg:mt-10">Pre-book a Top Tax Expert. | USE code ADV70 and get 70% OFF!</p>
+    </div>
+    <div class="lg:flex ">
+        <button class="text-white bg-sky-400 px-3 py-1.5 font-medium lg:font-medium lg:px-5 lg:py-3 lg:hover:cursor-pointer hover:bg-white hover:text-sky-400 rounded-md">Book Now</button>
+    </div>
+</div>
+
+<div class="flex flex-col space-y-8 lg:space-y-0 p-10 lg:p-0 lg:flex-row lg:items-center lg:justify-between lg:px-20 lg:py-15 bg-gray-100">
+    <ul class="lg:space-y-3 space-y-1.5  ">
+        <h1 class="text-2xl font-medium">Popular Calculators</h1>
+        <a href="#" class="block hover:text-sky-400 lg:text-lg ">Interest Calculator</a>
+        <a href="#" class="block hover:text-sky-400 lg:text-lg">Income Tax Calculator</a>
+        <a href="#" class="block hover:text-sky-400 lg:text-lg">Gratuity Calculator</a>
+        <a href="#" class="block hover:text-sky-400 lg:text-lg">SIP Calculator</a>
+        <a href="#" class="block hover:text-sky-400 lg:text-lg">PF Calculator</a>
+        <a href="#" class="block hover:text-sky-400 lg:text-lg">HRA calculator</a>
+        <a href="#" class="block hover:text-sky-400 lg:text-lg">Tax Calculator</a>
+        <a href="#" class="block hover:text-sky-400 lg:text-lg">Discount Calculator</a>
+
+
+    </ul>
+    <ul class="space-y-3 space-x-20 pt-8 hidden lg:block">
+                <a href="#" class="block hover:text-sky-400 text-lg">Salary Calculator</a>
+                <a href="#" class="block hover:text-sky-400 text-lg">PPF Calculator</a>
+                <a href="#" class="block hover:text-sky-400 text-lg">RD Calculator</a>
+                <a href="#" class="block hover:text-sky-400 text-lg">SWP Calculator</a>
+                <a href="#" class="block hover:text-sky-400 text-lg">Compound Interest Calculator</a>
+                <a href="#" class="block hover:text-sky-400 text-lg">Mutual Fund Calculator</a>
+                <a href="#" class="block hover:text-sky-400 text-lg">Home Loan Eligibility Calculator</a>
+                <a href="#" class="block hover:text-sky-400 text-lg">Loan Against Property Calculator</a>
+            </ul>
+    <ul class="lg:space-y-3 space-y-1.5 ">
+        <h1 class="text-2xl font-medium">Others Calculators</h1>
+        <a href="#" class="block hover:text-sky-400 lg:text-lg">Car Loan EMI Calculator</a>
+        <a href="#" class="block hover:text-sky-400 lg:text-lg">EMI Calculator</a>
+        <a href="#" class="block hover:text-sky-400 lg:text-lg">CAGR Calculator</a>
+        <a href="#" class="block hover:text-sky-400 lg:text-lg">Tax Saving Calculator</a>
+        <a href="#" class="block hover:text-sky-400 lg:text-lg">Future Value Calculator</a>
+        <a href="#" class="block hover:text-sky-400 lg:text-lg">SBI Car Loan EMI Calculator</a>
+        <a href="#" class="block hover:text-sky-400 lg:text-lg">Home Loan EMI Calculator</a>
+        <a href="#" class="block hover:text-sky-400 lg:text-lg">NPS Calculator</a>
+        
+    </ul>
+</div>
+
+<div class="bg-black/80 flex flex-col p-10 space-y-5 lg:flex-row  lg:items-start lg:justify-start lg:space-x-20  lg:px-20 lg:py-10 ">
+    <ul class="space-y-2">
+                <a href="#" class=" block hover:underline text-gray-300">About Us</a>
+                <a href="#" class=" block hover:underline text-gray-300">Our Products</a>
+                <a href="#" class=" block hover:underline text-gray-300">Approved Projects</a>
+                <a href="#" class=" block hover:underline text-gray-300">Calculators</a>
+                <a href="#" class=" block hover:underline text-gray-300">FAQs</a>
+                <a href="#" class=" block hover:underline text-gray-300">Contact Us</a>
+    </ul>
+
+    <ul  class="space-y-2">
+                <a href="#" class=" block hover:underline text-gray-300">Terms and Conditions</a>
+                <a href="#" class=" block hover:underline text-gray-300">Privacy Policy</a>
+                <a href="#" class=" block hover:underline text-gray-300">Apply Now</a>
+                <a href="#" class=" block hover:underline text-gray-300">Disclosure</a>
+                <a href="#" class=" block hover:underline text-gray-300">Feedback</a>
+    </ul>
+
+    <ul  class="space-y-2">
+        <h1 class=" block text-white font-medium">Call us at</h1>
+        <p class=" block text-gray-300">1800 11 2018</p>
+    </ul>    
+
+    
+</div>
+    
+
+
+    <script src="index.js"></script>
+</body>
+</html>
